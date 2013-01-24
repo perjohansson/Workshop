@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     less: {
       development: {
         options: {
-          paths: ['local/_ui/desktop/theme-blue/less'],
+          paths: ['public/styles/less'],
           compress: false,
           yuicompress: false
         },

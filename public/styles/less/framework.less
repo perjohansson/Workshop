@@ -1,0 +1,42 @@
+body{
+	background-color: #999;
+	width: 900px;
+	margin: 0 auto;
+}
+
+.center{
+	background-color: #fff;
+	padding: 20px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.img-block{
+	padding: 0 0 24px 0;
+	display: inline-block;
+	background-image: url(/images/shadow.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 100% 24px;
+
+	img{
+		display: block;
+	}
+}
+
+.img-frame{
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+
+img{
+
+	&.loader{
+		background-image: url(/images/ajax-loader.gif);
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+}
+
+
