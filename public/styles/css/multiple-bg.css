@@ -1,0 +1,113 @@
+/*The following now works fine!*/
+@charset "utf-8";
+
+
+.ex1 {
+	background: #000; /* unsupported */
+	background: url(images/box-bl.gif) no-repeat 0 100%, 
+				url(images/box-br.gif) no-repeat 100% 100%, 
+				url(images/box-b.gif) repeat-x 0 100%, 
+				url(images/box-tl.gif) no-repeat 0 0, 
+				url(images/box-tr.gif) no-repeat 100% 0, 
+				url(images/box-t.gif) repeat-x 0 0, 
+				url(images/box-l.gif) repeat-y 0 0, 
+				url(images/box-r.gif) repeat-y 100% 0, #000; /* CSS3 Browsers */
+	
+	color: #fff;
+	line-height: 18px;
+	padding: 15px;
+	font-family:"Trebuchet MS", Arial,sans-serif;
+	font-size: 14px;
+	clear: both;
+	}
+	.ex1 h1 {
+		position: relative;
+		top: -15px;
+		margin: 0 -15px -20px -15px;
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 55px;
+		height: 55px;
+		padding: 0 20px 26px 20px;
+		background: url(images/header-center.gif) repeat-x 0 0; /* unsupported */
+		background: url(images/header-left.gif) no-repeat -1px 0, 
+					url(images/header-right.gif) no-repeat 100% 0, 
+					url(images/header-center.gif) repeat-x 0 0; /* CSS3 Browsers */
+		}
+	/* added to test out multiple rules targeting the same elements */
+	.button {
+		background: url(images/button.gif) repeat-x 0 -34px; /* unsupported */
+		background: url(images/button2.gif) no-repeat 0 0, 
+					url(images/button2.gif) no-repeat 100% -68px, 
+					url(images/button2.gif) repeat-x 0 -34px; /* CSS3 Browsers */
+				
+		color: #fff;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 34px;
+		display: -moz-inline-stack;
+		display: inline-block;
+		padding: 0 10px;
+		outline: none;
+		text-align: center;
+		text-decoration: none;
+		cursor: pointer;
+		}
+		.button:hover {
+			background: url(images/button2.gif) repeat-x 0 -136px; /* unsupported */
+			background: url(images/dot.gif) no-repeat 50% 50%, 
+						url(images/button2.gif) no-repeat 0 -102px, 
+						url(images/button2.gif) no-repeat 100% -170px, 
+						url(images/button2.gif) repeat-x 0 -136px; /* CSS3 Browsers */
+			}
+		.button:active {
+			background: url(images/button2.gif) repeat-x 0 -238px; /* unsupported */
+			background: url(images/button2.gif) no-repeat 0 -204px, 
+						url(images/button2.gif) no-repeat 100% -272px, 
+						url(images/button2.gif) repeat-x 0 -238px; /* CSS3 Browsers */
+			}
+	.ex1 .button {
+		background: url(images/button2.gif) repeat-x 0 -34px; /* unsupported */
+		background: url(images/button.gif) no-repeat 0 0, 
+					url(images/button.gif) no-repeat 100% -68px, 
+					url(images/button.gif) repeat-x 0 -34px; /* CSS3 Browsers */
+
+		}
+		.ex1 .button:hover {
+			background: url(images/button.gif) repeat-x 0 -136px; /* unsupported */
+			background: url(images/button.gif) no-repeat 0 -102px, 
+						url(images/button.gif) no-repeat 100% -170px, 
+						url(images/button.gif) repeat-x 0 -136px; /* CSS3 Browsers */
+			}
+		.ex1 .button:active {
+			background: url(images/button.gif) repeat-x 0 -238px; /* unsupported */
+			background: url(images/button.gif) no-repeat 0 -204px, 
+						url(images/button.gif) no-repeat 100% -272px, 
+						url(images/button.gif) repeat-x 0 -238px; /* CSS3 Browsers */
+			}
+.ex2 label { clear: both; display: block; }
+.ex2 label span {
+	float: left;
+	width: 100px;
+	}
+.ex2 input.text {
+	background: url(images/input.gif) repeat-x 0 -30px; /* unsupported */
+	background: url(images/input.gif) no-repeat 0 0, 
+				url(images/input.gif) no-repeat 100% -60px, 
+				url(images/input.gif) repeat-x 0 -30px; /* CSS3 Browsers */
+	border: none;
+	font-size:14px;
+	line-height: 18px;
+	padding: 6px 15px;
+	height: 18px;
+	display: block;
+	width: 300px;
+	float: left;
+	}
+	.ex2 input.text:focus {
+		background: url(images/input.gif) repeat-x 0 -120px; /* unsupported */
+		background: url(images/input.gif) no-repeat 0 -90px, 
+					url(images/input.gif) no-repeat 100% -150px, 
+					url(images/input.gif) repeat-x 0 -120px; /* CSS3 Browsers */
+		}
+		
