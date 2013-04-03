@@ -9,6 +9,27 @@ body {
   margin: 0 auto;
   overflow: hidden;
 }
+.img-caption {
+  position: relative;
+  margin-bottom: 15px;
+  display: table;
+  width: 1px;
+  zoom: 1;
+  *display: block;
+  *width: auto;
+}
+.img-caption .caption {
+  position: relative;
+  font-style: italic;
+  z-index: 2;
+  margin-top: -20px;
+  background-color: pink;
+  zoom: 1;
+  *width: 200px;
+}
+.img-caption .caption p {
+  margin: 0;
+}
 .img-block {
   padding: 0 0 24px 0;
   display: inline-block;
@@ -16,8 +37,13 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100% 24px;
+  position: relative;
+  z-index: 1;
+  zoom: 1;
+  *display: inline;
 }
-.img-block img {
+.img-block img,
+.img-block iframe {
   display: block;
 }
 .img-frame {
@@ -47,4 +73,182 @@ blockquote span {
   font-size: 12px;
   line-height: 16px;
   color: #999;
+}
+.cite {
+  padding: 0 50px;
+  font-size: 24px;
+  line-height: 30px;
+  font-style: italic;
+  text-indent: -10px;
+  margin: 0 0 30px 0;
+}
+.cite-name {
+  padding: 0 50px;
+  text-align: right;
+  font-style: italic;
+  margin: -30px 0 30px 0;
+}
+.rotated {
+  width: 300px;
+  margin: 0 auto;
+  background-color: #999;
+  background-color: rgba(0, 0, 0, 0.25);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+.rotated .inner {
+  padding: 20px;
+  background-color: #00ffff;
+  background-color: rgba(0, 255, 255, 0.25);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.floats {
+  background-color: #333;
+  width: 100%;
+  margin: 0;
+}
+.floats .wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: #999;
+}
+.floats .wrapper .center-page {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.floats .wrapper .clear {
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.floats .wrapper .illustration {
+  min-width: 490px;
+}
+.floats .wrapper .content {
+  width: 490px;
+  padding-top: 30px;
+}
+.floats .wrapper .number {
+  padding: 5px 0;
+  position: relative;
+}
+.floats .wrapper .number img {
+  display: block;
+}
+.floats .wrapper .number .deco {
+  position: absolute;
+  left: -10000px;
+  width: 200000px;
+  height: 0;
+  display: none;
+  z-index: 0;
+}
+.floats .wrapper .number .deco.top {
+  top: 0;
+  border-top: 1px dashed #fff;
+}
+.floats .wrapper .number .deco.bottom {
+  bottom: 0;
+  border-bottom: 1px dashed #fff;
+}
+.floats .wrapper .social-outer {
+  padding: 1px;
+}
+.floats .wrapper .social-inner {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+}
+.floats .wrapper.red {
+  background-color: #d3442d;
+}
+.floats .wrapper.red .social-outer {
+  background-color: #a93624;
+}
+.floats .wrapper.green {
+  background-color: #6a9e56;
+}
+.floats .wrapper.green .social-outer {
+  background-color: #547d44;
+}
+.floats .wrapper.blue {
+  background-color: #6da6be;
+}
+.floats .wrapper.blue .social-outer {
+  background-color: #4c8fac;
+}
+.floats .wrapper.yellow {
+  background-color: #beb96d;
+}
+.floats .wrapper.yellow .social-outer {
+  background-color: #aca64c;
+}
+.floats .wrapper.lines .deco {
+  display: block;
+}
+.floats .wrapper.no .number {
+  position: absolute;
+  top: 20px;
+}
+.floats .wrapper.no .content {
+  padding-top: 70px;
+}
+.floats .wrapper.ir .illustration {
+  float: right;
+  text-align: left;
+  margin-left: -510px;
+}
+.floats .wrapper.ir .content {
+  float: left;
+}
+.floats .wrapper.ir.no .number {
+  right: 0;
+}
+.floats .wrapper.il .illustration {
+  float: left;
+  text-align: right;
+  margin-right: -510px;
+}
+.floats .wrapper.il .content {
+  float: right;
+}
+.floats .wrapper.il .number {
+  margin-left: -20px;
+}
+.floats .wrapper.il.no .number {
+  left: 0;
+}
+.mobile {
+  background-color: #cacaca;
+  width: auto;
+}
+.mobile .list {
+  margin: 10px;
+}
+.mobile .list ul {
+  margin: 0 -0.5%;
+  padding: 0;
+  list-style: none;
+}
+.mobile .list ul li {
+  float: left;
+  width: 48%;
+  margin: 1%;
+  background-color: red;
+}
+.mobile .list ul li img {
+  width: 100%;
+  display: block;
 }

@@ -1,0 +1,168 @@
+.floats{
+	background-color: #333;
+	width: 100%;
+	margin: 0;
+
+	.wrapper{
+		width: 100%;
+		overflow: hidden;
+		background-color: #999;
+
+		.center-page{
+			width: 1000px;
+			height: 100%;
+			margin: 0 auto;
+			position: relative;
+
+			
+		}
+
+		.clear{
+			clear: both;
+			width: 100%;
+			height: 0;
+		}
+
+		.illustration{
+			min-width: 490px;
+
+			img{
+
+			}	
+		}
+
+		.content{
+			width: 490px;
+			padding-top: 30px;
+		}
+
+		.number{
+			padding: 5px 0;
+			position: relative;
+
+			img{
+				display: block;
+			}
+
+			.deco{
+				position: absolute;
+				left: -10000px;
+				width: 200000px;
+				height: 0;
+				display: none;
+				z-index: 0;
+
+				&.top{
+					top: 0;
+					border-top: 1px dashed #fff;
+				}
+
+				&.bottom{
+					bottom: 0;
+					border-bottom: 1px dashed #fff;
+				}
+
+			}
+		}
+
+		.social-outer{
+			padding: 1px;
+		}
+
+		.social-inner{
+			border: 1px solid #fff;
+			padding: 10px 20px;
+		}
+
+		&.red{
+			background-color: @red;
+
+			.social-outer{
+				background-color: darken(@red, 10%);
+			}
+		}
+
+		&.green{
+			background-color: @green;
+
+			.social-outer{
+				background-color: darken(@green, 10%);
+			}
+		}
+
+		&.blue{
+			background-color: @blue;
+
+			.social-outer{
+				background-color: darken(@blue, 10%);
+			}
+		}
+
+		&.yellow{
+			background-color: @yellow;
+
+			.social-outer{
+				background-color: darken(@yellow, 10%);
+			}
+		}
+
+		&.lines{
+			.deco{
+				display: block;
+			}
+		}
+
+		&.no{
+			.number{
+				position: absolute;
+				top: 20px;
+			}
+
+			.content{
+				padding-top: 70px;
+			}
+		}
+
+
+
+		&.ir{
+			.illustration{
+				float: right;
+				text-align: left;
+				margin-left: -510px;
+			}
+
+			.content{
+				float: left;
+			}
+
+			&.no{
+				.number{
+					right: 0;
+				}
+			}
+		}
+
+		&.il{
+			.illustration{
+				float: left;
+				text-align: right;
+				margin-right: -510px;
+			}
+
+			.content{
+				float: right;
+			}
+
+			.number{
+				margin-left: -20px;
+			}
+
+			&.no{
+				.number{
+					left: 0;
+				}
+			}
+		}
+	}
+}
